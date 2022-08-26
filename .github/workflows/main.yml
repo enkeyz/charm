@@ -1,0 +1,11 @@
+name: Broken link check workflow
+on: [workflow_dispatch]
+
+jobs:
+  link-check:
+    name: Link check
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Scan for broken links
+      uses: enkeyz/linkcheck@main
