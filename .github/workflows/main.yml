@@ -6,12 +6,10 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
 
-    outputs:
-      output2: ${{ steps.step2.outputs.test }}
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
     - name: Scan for broken links
-      id: step2
       uses: enkeyz/linkcheck-action@test_release
+      with:
+        verbose: true
