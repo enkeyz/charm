@@ -14,4 +14,4 @@ jobs:
       uses: actions/checkout@v3
     - name: Scan for broken links
       id: step2
-      uses: enkeyz/linkcheck@test_release
+      uses: enkeyz/linkcheck-action@test_release
