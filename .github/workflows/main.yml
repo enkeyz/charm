@@ -8,4 +8,4 @@ jobs:
 
     steps:
     - name: Scan for broken links
-      uses: enkeyz/linkcheck@main
+      uses: enkeyz/linkcheck-action@test_release
